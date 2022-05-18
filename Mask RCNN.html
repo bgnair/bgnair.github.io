@@ -15,18 +15,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="荷兰国旗, misc, " />
+<meta name="keywords" content="深度学习, misc, " />
 
-<meta property="og:title" content="荷兰国旗 "/>
-<meta property="og:url" content="/test.html" />
-<meta property="og:description" content="package com.nanjia.chapter1; public class NetherlandsFlag { //荷兰国旗代码逻辑 public static void partition(int[] arr, int left, int right, int point) { int less = left - 1; int more = right + 1; while (left &lt; more) { if (arr[left] &lt; point) { swap(arr, ++less, left++); } else if (arr[left …" />
+<meta property="og:title" content="一个小型的Mask R-CNN的植物图像分割的数据集 "/>
+<meta property="og:url" content="/Mask RCNN.html" />
+<meta property="og:description" content="一个小型的Mask R-CNN的植物图像分割的数据集 此数据集是直接对标于在Github上面的Mask R-CNN实例分割的开源项目，该项目的Github地 …" />
 <meta property="og:site_name" content="blog of nanjia" />
 <meta property="og:article:author" content="bgnair" />
-<meta property="og:article:published_time" content="2016-02-28T00:00:00+08:00" />
-<meta name="twitter:title" content="荷兰国旗 ">
-<meta name="twitter:description" content="package com.nanjia.chapter1; public class NetherlandsFlag { //荷兰国旗代码逻辑 public static void partition(int[] arr, int left, int right, int point) { int less = left - 1; int more = right + 1; while (left &lt; more) { if (arr[left] &lt; point) { swap(arr, ++less, left++); } else if (arr[left …">
+<meta property="og:article:published_time" content="2022-05-14T00:00:00+08:00" />
+<meta name="twitter:title" content="一个小型的Mask R-CNN的植物图像分割的数据集 ">
+<meta name="twitter:description" content="一个小型的Mask R-CNN的植物图像分割的数据集 此数据集是直接对标于在Github上面的Mask R-CNN实例分割的开源项目，该项目的Github地 …">
 
-        <title>荷兰国旗  · blog of nanjia
+        <title>一个小型的Mask R-CNN的植物图像分割的数据集  · blog of nanjia
 </title>
 
 
@@ -67,8 +67,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="/test.html">
-                荷兰国旗
+            <a href="/Mask RCNN.html">
+                一个小型的Mask R-CNN的植物图像分割的数据集
             </a>
         </h1>
     </header>
@@ -77,42 +77,17 @@
 <div class="row-fluid">
         <div class="span8 offset2 article-content">
             
-            <div class="highlight"><pre><span></span><code><span class="kn">package</span> <span class="nn">com.nanjia.chapter1</span><span class="p">;</span>
+            <h3>一个小型的Mask R-CNN的植物图像分割的数据集</h3>
+<h5>此数据集是直接对标于在Github上面的Mask R-CNN实例分割的开源项目，该项目的Github地址是：</h5>
+<div class="highlight"><pre><span></span><code>https://github.com/matterport/Mask_RCNN
+</code></pre></div>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">NetherlandsFlag</span> <span class="p">{</span>
-    <span class="c1">//荷兰国旗代码逻辑</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">partition</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="p">,</span> <span class="kt">int</span> <span class="n">left</span><span class="p">,</span> <span class="kt">int</span> <span class="n">right</span><span class="p">,</span> <span class="kt">int</span> <span class="n">point</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">less</span> <span class="o">=</span> <span class="n">left</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">more</span> <span class="o">=</span> <span class="n">right</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="k">while</span> <span class="p">(</span><span class="n">left</span> <span class="o">&lt;</span> <span class="n">more</span><span class="p">)</span> <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">left</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">point</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="o">++</span><span class="n">less</span><span class="p">,</span> <span class="n">left</span><span class="o">++</span><span class="p">);</span>
-            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">left</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">point</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="o">--</span><span class="n">more</span><span class="p">,</span> <span class="n">left</span><span class="p">);</span>
-            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="n">left</span><span class="o">++</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="c1">//交换函数</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">swap</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="p">,</span> <span class="kt">int</span> <span class="n">a1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">a2</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">a1</span><span class="o">]</span><span class="p">;</span>
-        <span class="n">arr</span><span class="o">[</span><span class="n">a1</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">a2</span><span class="o">]</span><span class="p">;</span>
-        <span class="n">arr</span><span class="o">[</span><span class="n">a2</span><span class="o">]</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">//打印数组</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printArray</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">arr1</span><span class="p">:</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">arr1</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="c1">//主函数</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">};</span>
-        <span class="n">partition</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
-        <span class="n">printArray</span><span class="p">(</span><span class="n">arr</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<h4>使用该数据集分割的效果如下</h4>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200719220717550.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NzEyNzg4,size_16,color_FFFFFF,t_70#pic_center">
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200719221109797.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NzEyNzg4,size_16,color_FFFFFF,t_70#pic_center">
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/20200719221124157.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NzEyNzg4,size_16,color_FFFFFF,t_70#pic_center"></p>
+<h4>数据集的下载可以在下面这个地址上进行下载</h4>
+<div class="highlight"><pre><span></span><code>https://github.com/bgnair/FlowersImage_Mask-R-CNN-DataSet
 </code></pre></div>
 
 
@@ -132,12 +107,12 @@
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2016-02-28T00:00:00+08:00">日 28 二月 2016</time>
+            <time itemprop="dateCreated" datetime="2022-05-14T00:00:00+08:00">六 14 五月 2022</time>
             <h4>Category</h4>
             <a class="category-link" href="/categories.html#misc-ref">misc</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="/tags.html#he-lan-guo-qi-ref">荷兰国旗
+                <li><a href="/tags.html#shen-du-xue-xi-ref">深度学习
                     <span class="superscript">1</span>
 </a></li>
             </ul>
